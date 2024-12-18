@@ -1,0 +1,272 @@
+.container-fluid {
+    background-color: rgb(38, 151, 55);
+    text-align: center;
+    height: 30px;
+    color: aliceblue;
+
+}
+
+/* Đặt lại các thuộc tính mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Định dạng cho body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Thanh trên cùng */
+.top-bar {
+    font-size: 0.9rem;
+    background-color: #f8f9fa;
+}
+
+.top-bar .navbar-brand img {
+    max-height: 40px;
+}
+
+.top-bar .contact-info {
+    color: #333;
+    font-size: 1rem;
+    white-space: nowrap;
+    /* Giữ hotline trên một dòng */
+}
+
+.top-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar input.form-control {
+    width: 250px;
+    border-radius: 20px 0 0 20px;
+    border-right: none;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    transition: border-color 0.3s ease;
+}
+
+.top-bar input.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Nút tìm kiếm */
+.top-bar button {
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.top-bar button i {
+    font-size: 1.2rem;
+}
+
+.top-bar button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.top-bar button:active {
+    background-color: #004494;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Các liên kết hữu ích */
+.top-bar .user-actions a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.top-bar .user-actions a:hover {
+    text-decoration: underline;
+}
+
+/* Thanh điều hướng chính */
+.navbar {
+    padding: 0.5rem 0;
+    background-color: #fff;
+    /* Màu nền trắng */
+    border-bottom: 2px solid #f0f0f0;
+    /* Viền dưới nhẹ */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Hiệu ứng đổ bóng */
+}
+
+/* Logo trong navbar */
+.navbar-brand img {
+    max-height: 50px;
+}
+
+/* Định dạng menu dạng nút */
+.navbar-nav .nav-item {
+    margin-right: 15px;
+    /* Khoảng cách giữa các nút */
+}
+
+.navbar-nav .nav-link {
+    display: inline-block;
+    color: #fff;
+    /* Chữ trắng */
+    background-color: #ffffff;
+    /* Màu nền xanh */
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    /* Viền trong suốt */
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Hiệu ứng bóng nhẹ */
+}
+
+/* Nút menu khi hover */
+.navbar-nav .nav-link:hover {
+    background-color: #00ff6a;
+    /* Nền khi hover */
+    color: #fff;
+    /* Chữ trắng */
+    border-color: #9099ac;
+    /* Viền xanh khi hover */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    /* Hiệu ứng nổi */
+}
+
+/* Hiệu ứng khi nút được active (nhấn chọn) */
+.navbar-nav .nav-link.active {
+    background-color: #d5dbe2;
+    /* Màu nền khi active */
+    color: #fff;
+    /* Chữ trắng */
+    border-color: #004494;
+    /* Viền xanh đậm khi active */
+}
+
+
+
+
+
+/* Căn giữa menu */
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tùy chỉnh giỏ hàng */
+.btn-outline-secondary {
+    border: none;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-secondary i {
+    font-size: 1.2rem;
+    margin-right: 5px;
+    color: #007bff;
+}
+
+.btn-outline-secondary:hover i {
+    color: #fff;
+}
+
+/* Sticky header */
+.sticky-top {
+    z-index: 1020;
+    background-color: #fff;
+}
+
+
+
+
+
+.banner {
+    background-image: url('https://via.placeholder.com/1500x500');
+    /* Thay bằng ảnh nền thực tế */
+    background-size: cover;
+    background-position: center;
+    color: #2e7d32;
+    padding: 60px 0;
+    position: relative;
+    height: 400px;
+}
+
+.contact-buttons {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.banner {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-footer {
+    font-size: 0.9rem;
+}
+
+.text-warning i {
+    color: #ffc107;
+}
+
+.bg-success {
+    background-color: #4CAF50 !important;
+}
